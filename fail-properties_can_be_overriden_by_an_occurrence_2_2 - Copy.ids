@@ -9,17 +9,17 @@
       <applicability maxOccurs="unbounded">
         <entity>
           <name>
-            <simpleValue>IFCSLAB</simpleValue>
+            <simpleValue>IFCWALL</simpleValue>
           </name>
         </entity>
       </applicability>
       <requirements>
-        <property dataType="IfcQuantityVolume">
+        <property dataType="IfcPositiveLengthMeasure">
           <propertySet>
             <simpleValue>Pset_ElementSize</simpleValue>
           </propertySet>
           <baseName>
-            <simpleValue>Volume</simpleValue>
+            <simpleValue>NominalLength</simpleValue>
           </baseName>
           <value>
             <simpleValue>3</simpleValue>

@@ -126,9 +126,6 @@ fragments.onFragmentsDisposed.add(({ fragmentIDs }) => {
 const projectInformationPanel = projectInformation(components);
 const elementDataPanel = elementData(components);
 
-const parameters = components.get(IdsParameters);
-await parameters.load();
-
 const toolbar = BUI.Component.create(() => {
   return BUI.html`
     <bim-tabs floating style="justify-self: center; border-radius: 0.5rem;">

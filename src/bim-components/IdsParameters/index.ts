@@ -34,14 +34,10 @@ export class IdsParameters extends OBC.Component {
   // The overall purpose of the load method is to take an IDS file, traverse its content
   // and parse the information into the interface given above to store the data
   // into the idsData, then the array will be read in the UI.
-  async load() {
+  async load(fileData: string) {
     // Load the ids and read the data from the file. Each read adds the
     // data into the component incrementally.
     const ids = this.components.get(OBC.IDSSpecifications);
-    const file = await fetch(
-      "../../fail-properties_can_be_overriden_by_an_occurrence_2_2.ids",
-    );
-    const fileData = await file.text();
     const specs = ids.load(fileData);
 
     // For simplicity, we will take the first specification's requirements.
